@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackgrnd"
+    tools:context=".Model.ConfigureActivity">
+
+    <TextView
+        android:id="@+id/BoardSz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:text="Board Size"
+        android:textColor="#FFEBEE"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Minenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="# of Mines"
+        android:textColor="#FFEBEE"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoardSz" />
+
+    <Spinner
+        android:id="@+id/BoardSzspinner"
+        android:layout_width="153dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFEBEE"
+        app:layout_constraintStart_toEndOf="@+id/BoardSz"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/NumOfMinesSpinner"
+        android:layout_width="153dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="#FFEBEE"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/Minenum"
+        app:layout_constraintTop_toBottomOf="@+id/BoardSzspinner"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="50dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="50dp"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
